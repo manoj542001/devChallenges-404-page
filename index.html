@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page not found</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&display=swap" rel="stylesheet"> -->
+   <style>
+    
+    *{
+        font-family: 'IBM Plex Mono', monospace;
+        padding: 0px;
+        margin: 0px;
+       
+       
+    }
+    .heading{
+        padding: 10px;
+    }
+    .container{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    height: 85vh;
+    }
+    .content{
+        display: flex;
+        justify-content: space-around ;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .img{  
+        max-width: 350px; 
+    }
+    .news{   
+        max-width: 400px;
+        padding: 30px; 
+    }
+    .news p{
+        padding: 15px 0px;
+    }
+    
+    button{
+        
+        background-color: black;
+        color: white;
+        border: 1px;
+        padding: 10px;
+        /* transform: translatex(100px); */
+    }
+    b{
+        font-weight:300;
+    }
+    a{
+        color: black;
+    }
+    
+    @media only screen and (max-width: 320px) {
+   small{
+    font-size: 12px;
+   }
+  }
+  button:hover{
+    cursor: pointer;
+    box-shadow:rgb(168, 158, 158) 0px 0px 5px 5px;
+    transform: scale(1.05);
+    transition:0.3s ease-out ;
+  }
+.footer{
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 100;
+    padding-bottom: 5px;
+}
+   </style> 
+</head>
+<body>
+<div class="full" id="full">
+        <div class="heading">
+           <b style="font-weight:700;">404 NOT FOUND</b> 
+        </div>
+        <div class="container" id="container">
+        <div class="content" id="cont">
+            <div class="img">
+                <img src="./image/5.png" alt="error image">
+            </div>
+            <div class="news">
+                <h1>I have a bad News for you</h1>
+                <p style="max-width:250px;">The page you are looking formight be removed or is temporary unavailable
+                </p>
+                <button id="btn" onclick="click122()">BACK TO HOMEPAGE</button>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <small>created by<a href="#"><b id="b">Mr-manoj</b></a>- devChallenges.io</small>
+        </div>
+    </div>
+    <script>
+        function click122(){
+        document.getElementById("full").style.backgroundColor="black";
+        document.getElementById("full").style.color="white";
+        document.getElementById("b").style.color="white";
+        document.getElementById("btn").style.color="black";
+        document.getElementById("btn").style.backgroundColor="white";
+
+
+
+        }
+    </script>
+</body>
+</html>
